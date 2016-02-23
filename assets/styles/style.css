@@ -1,0 +1,17 @@
+.sound-board{
+    text-align: center;   
+}
+
+.music-box{
+    height: 100px;
+    display: inline-block;
+    width: 30px;
+    margin: 5px;
+    background-color: ivory;
+    border: 2px solid black;
+   
+    
+}
+.music-box:hover{
+    background-color: #ffb;
+}
