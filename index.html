@@ -7,12 +7,12 @@
 </head>
 <body ng-controller="MusicController">
     
-    {{2+2}}
-    {{test}}
+    
+    
     <div class="sound-board">
-        <div class="music-box" ng-repeat="box in boxes" ng-mouseover="playNote(box)">
+        <div class="music-box" ng-class="{'active': box.lightUp}" ng-repeat="box in boxes" ng-mouseover="playNote(box)">
             {{box.note}}
-            <audio src="{{box.wave}}"></audio>
+            <audio id="{{box.note}}" ng-src="{{box.wave}}"></audio>
         </div>
         
     </div>
